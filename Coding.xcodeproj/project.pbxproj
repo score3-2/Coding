@@ -13,6 +13,7 @@
 		DA500D1021423A4D001AB296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA500D0E21423A4D001AB296 /* Main.storyboard */; };
 		DA500D1221423A4D001AB296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA500D1121423A4D001AB296 /* Assets.xcassets */; };
 		DA500D1521423A4D001AB296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA500D1321423A4D001AB296 /* LaunchScreen.storyboard */; };
+		DA500D1D21423C02001AB296 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA500D1C21423C02001AB296 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DA500D1121423A4D001AB296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA500D1421423A4D001AB296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA500D1621423A4D001AB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA500D1C21423C02001AB296 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,8 @@
 		DA500CFC21423A4D001AB296 = {
 			isa = PBXGroup;
 			children = (
+				DA500D1F21423C46001AB296 /* Storyboards */,
+				DA500D1E21423C2F001AB296 /* Controllers */,
 				DA500D0721423A4D001AB296 /* Coding */,
 				DA500D0621423A4D001AB296 /* Products */,
 			);
@@ -57,14 +61,29 @@
 			isa = PBXGroup;
 			children = (
 				DA500D0821423A4D001AB296 /* AppDelegate.swift */,
-				DA500D0A21423A4D001AB296 /* FirstViewController.swift */,
-				DA500D0C21423A4D001AB296 /* SecondViewController.swift */,
-				DA500D0E21423A4D001AB296 /* Main.storyboard */,
 				DA500D1121423A4D001AB296 /* Assets.xcassets */,
-				DA500D1321423A4D001AB296 /* LaunchScreen.storyboard */,
 				DA500D1621423A4D001AB296 /* Info.plist */,
 			);
 			path = Coding;
+			sourceTree = "<group>";
+		};
+		DA500D1E21423C2F001AB296 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA500D0A21423A4D001AB296 /* FirstViewController.swift */,
+				DA500D0C21423A4D001AB296 /* SecondViewController.swift */,
+				DA500D1C21423C02001AB296 /* ThirdViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA500D1F21423C46001AB296 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA500D0E21423A4D001AB296 /* Main.storyboard */,
+				DA500D1321423A4D001AB296 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				DA500D0D21423A4D001AB296 /* SecondViewController.swift in Sources */,
 				DA500D0921423A4D001AB296 /* AppDelegate.swift in Sources */,
+				DA500D1D21423C02001AB296 /* ThirdViewController.swift in Sources */,
 				DA500D0B21423A4D001AB296 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
