@@ -26,17 +26,44 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="e5L-uc-RsZ"/>
                                 </connections>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eHz-JC-irC">
+                                <rect key="frame" x="20" y="90" width="280" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="5" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="l8u-mG-eAJ">
+                                        <rect key="frame" x="-2" y="0.0" width="246.5" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="sliderAgeMoved:" destination="9pv-A4-QxB" eventType="valueChanged" id="nlk-CT-Wqr"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-58-nUz">
+                                        <rect key="frame" x="250.5" y="0.5" width="29.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nKN-XP-MMy" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="5rR-2t-ubK"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="nKN-XP-MMy" secondAttribute="trailing" constant="20" id="C7I-CQ-GI8"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="eHz-JC-irC" secondAttribute="trailing" constant="20" id="F3L-CW-3Cv"/>
                             <constraint firstItem="nKN-XP-MMy" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="Q2O-uV-bBS"/>
                             <constraint firstItem="nKN-XP-MMy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="UC9-6b-qSl"/>
+                            <constraint firstItem="eHz-JC-irC" firstAttribute="top" secondItem="nKN-XP-MMy" secondAttribute="bottom" constant="30" id="Yyp-pe-2v6"/>
+                            <constraint firstItem="eHz-JC-irC" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="qgh-DU-Nyw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="labelAge" destination="09Y-58-nUz" id="WH4-jW-JPA"/>
+                        <outlet property="sliderAge" destination="l8u-mG-eAJ" id="QwH-hM-wwt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
